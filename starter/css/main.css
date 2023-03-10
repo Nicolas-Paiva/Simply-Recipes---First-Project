@@ -276,12 +276,47 @@ ul {
   align-items: center;
 }
 
+/* The logo and the toggle button where not aligned, therefore, we had to set the link to display flex */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav-header img {
   width: 200px;
 }
 
 .nav-btn {
-  padding: 0.15rem 0.75rem;
+  padding: 0.3rem 0.75rem;
+}
+
+.nav-btn i {
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  /* todo (gonna create later) */
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--grey-900);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+}
+
+/* This is affected by the transition property */
+.nav-link:hover {
+  color: var(--primary-500);
+}
+
+.contact-link a {
+  padding: 0.15rem 1rem;
 }
 
 /* ==================================================================================== */
