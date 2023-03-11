@@ -294,10 +294,18 @@ ul {
   font-size: 1.2rem;
 }
 
+/* Nav links will be hidden and only appear after clicking the toggle button */
 .nav-links {
   display: flex;
   flex-direction: column;
-  /* todo (gonna create later) */
+  /* Hiding the links */
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* How the links are going to be displayed after using the toggle button */
+.show-links {
 }
 
 .nav-link {
