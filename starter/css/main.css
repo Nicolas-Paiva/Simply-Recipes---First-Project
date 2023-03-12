@@ -306,6 +306,7 @@ ul {
 
 /* How the links are going to be displayed after using the toggle button */
 .show-links {
+  height: 310px;
 }
 
 .nav-link {
