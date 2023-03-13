@@ -328,6 +328,34 @@ ul {
   padding: 0.15rem 1rem;
 }
 
+/* Working on the big screen layout */
+
+/* After 992px, this is the layout: */
+@media screen and (min-width: 992px) {
+  /* Button disappears: */
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+  }
+
+  /* We wanna show the links in the big screen */
+  .nav-links {
+    height: auto;
+  }
+}
+
 /* ==================================================================================== */
 /* Main */
 /* ==================================================================================== */
