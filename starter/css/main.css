@@ -350,9 +350,25 @@ ul {
     margin-right: 2rem;
   }
 
-  /* We wanna show the links in the big screen */
+  /* We wanna show the links in the big screen, but as a row */
   .nav-links {
     height: auto;
+    flex-direction: row;
+    align-items: center;
+    /* We want the links to occupy the remaining space of the div: */
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 0;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-link {
+    /* Places the button all the way on the right */
+    margin-left: auto;
   }
 }
 
