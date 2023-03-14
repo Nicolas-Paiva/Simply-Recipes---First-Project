@@ -369,6 +369,7 @@ ul {
   .contact-link {
     /* Places the button all the way on the right */
     margin-left: auto;
+    margin-right: 0;
   }
 }
 
@@ -376,6 +377,36 @@ ul {
 /* Main */
 /* ==================================================================================== */
 
+/* We want the page to occupy a certain width and height of the screen */
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  /* Placing the content in the center */
+  margin: 0 auto;
+  /* Some distance from the header */
+  padding-top: 2rem;
+  /* We want the page to occupy 100%  of the space, but we need to subtract the footer as well as the header */
+  height: calc(100vh - (6rem + 4rem));
+}
+
 /* ==================================================================================== */
 /* Footer */
 /* ==================================================================================== */
+
+.page-footer {
+  height: 4rem;
+  background: var(--black);
+  color: var(--white);
+  /* Aligning the text in the center: */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer p {
+  margin-bottom: 0;
+}
+.footer-logo,
+.page-footer a {
+  color: var(--primary-500);
+}
